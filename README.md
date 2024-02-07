@@ -5,8 +5,6 @@
 
 <h1>WPF PRJECTS</h1>
 
----
-
 1. Lab1_nazarov (complete)
 2. lab2_nazarov (development)
 3. lab3_nazarov (development)
