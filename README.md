@@ -3,7 +3,7 @@
 
 ---
 
-<h1>WPF PRJECTS</h1>
+<h1>WPF PROJECTS</h1>
 
 1. Lab1_nazarov (complete)
 2. lab2_nazarov (development)
