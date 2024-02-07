@@ -8,7 +8,7 @@ public class FazzyNumber : IPair
 
     public double X
     {
-        get { return X; }
+        get { return x; }
         set { value = x; }
     }
 

@@ -13,48 +13,55 @@ namespace lab1_nazarov
 
         private void OnAddButtonClick(object sender, RoutedEventArgs e)
         {
-            int numerator = int.Parse(numeratorTextBox.Text);
-            int denominator = int.Parse(denominatorTextBox.Text);
+            int numerator1 = int.Parse(numeratorTextBox.Text);
+            int denominator1 = int.Parse(denominatorTextBox.Text);
+            Fraction fraction1 = new Fraction(numerator1, denominator1);
 
+            int numerator2 = int.Parse(numerator2TextBox.Text);
+            int denominator2 = int.Parse(denominator2TextBox.Text);
+            Fraction fraction2 = new Fraction(numerator2, denominator2);
 
-            Fraction fraction1 = new Fraction(numerator, denominator);
-            Fraction fraction2 = new Fraction(3, 4);
             Fraction resultFraction = fraction1 + fraction2;
             resultTextBlock.Text = resultFraction.ToString();
         }
 
         private void OnSubtractButtonClick(object sender, RoutedEventArgs e)
         {
-            int numerator = int.Parse(numeratorTextBox.Text);
-            int denominator = int.Parse(denominatorTextBox.Text);
-            
-            Fraction fraction1 = new Fraction(numerator, denominator);
-            Fraction fraction2 = new Fraction(3, 4);
+            int numerator1 = int.Parse(numeratorTextBox.Text);
+            int denominator1 = int.Parse(denominatorTextBox.Text);
+            Fraction fraction1 = new Fraction(numerator1, denominator1);
+
+            int numerator2 = int.Parse(numerator2TextBox.Text);
+            int denominator2 = int.Parse(denominator2TextBox.Text);
+            Fraction fraction2 = new Fraction(numerator2, denominator2);
+
             Fraction resultFraction = fraction1 - fraction2;
-            
             resultTextBlock.Text = resultFraction.ToString();
         }
 
         private void OnMultiplyButtonClick(object sender, RoutedEventArgs e)
         {
-            int numerator = int.Parse(numeratorTextBox.Text);
-            int denominator = int.Parse(denominatorTextBox.Text);
+            int numerator1 = int.Parse(numeratorTextBox.Text);
+            int denominator1 = int.Parse(denominatorTextBox.Text);
+            Fraction fraction1 = new Fraction(numerator1, denominator1);
 
- 
-            Fraction fraction1 = new Fraction(numerator, denominator);
-            Fraction fraction2 = new Fraction(3, 4); 
+            int numerator2 = int.Parse(numerator2TextBox.Text);
+            int denominator2 = int.Parse(denominator2TextBox.Text);
+            Fraction fraction2 = new Fraction(numerator2, denominator2);
+
             Fraction resultFraction = fraction1 * fraction2;
-            
             resultTextBlock.Text = resultFraction.ToString();
         }
 
         private void OnDivideButtonClick(object sender, RoutedEventArgs e)
         {
-            int numerator = int.Parse(numeratorTextBox.Text);
-            int denominator = int.Parse(denominatorTextBox.Text);
-            
-            Fraction fraction1 = new Fraction(numerator, denominator);
-            Fraction fraction2 = new Fraction(3, 4);
+            int numerator1 = int.Parse(numeratorTextBox.Text);
+            int denominator1 = int.Parse(denominatorTextBox.Text);
+            Fraction fraction1 = new Fraction(numerator1, denominator1);
+
+            int numerator2 = int.Parse(numerator2TextBox.Text);
+            int denominator2 = int.Parse(denominator2TextBox.Text);
+            Fraction fraction2 = new Fraction(numerator2, denominator2);
 
             try
             {

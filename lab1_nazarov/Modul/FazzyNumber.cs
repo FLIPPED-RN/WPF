@@ -8,7 +8,7 @@ public class FazzyNumber : Pair
 
     public double X
     {
-        get { return X; }
+        get { return x; }
         set { value = x; }
     }
 
