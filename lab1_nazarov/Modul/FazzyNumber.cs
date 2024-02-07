@@ -23,7 +23,8 @@ public class FazzyNumber : Pair
         this.e1 = e1;
         this.er = e2;
     }
-
+    
+    //вычитание
     public static FazzyNumber operator -(FazzyNumber A, FazzyNumber B)
     {
         double x = A.x - B.x;
@@ -32,6 +33,7 @@ public class FazzyNumber : Pair
         return new FazzyNumber(x, e1, er);
     }
 
+    //сложение
     public static FazzyNumber operator +(FazzyNumber A, FazzyNumber B)
     {
         double x = A.x + B.x;
@@ -40,6 +42,7 @@ public class FazzyNumber : Pair
         return new FazzyNumber(x, e1, er);
     }
 
+    //умножение
     public static FazzyNumber operator *(FazzyNumber A, FazzyNumber B)
     {
         double x = A.x * B.x;
@@ -48,6 +51,7 @@ public class FazzyNumber : Pair
         return new FazzyNumber(x, e1, er);
     }
     
+    //деление
     public static FazzyNumber operator /(FazzyNumber A, FazzyNumber B)
     {
         if (B.x <= 0)
@@ -58,6 +62,7 @@ public class FazzyNumber : Pair
         return new FazzyNumber(x, e1, er);
     }
 
+    //обратное число
     public static FazzyNumber operator !(FazzyNumber A)
     {
         int NumberOne = 1;
@@ -71,6 +76,6 @@ public class FazzyNumber : Pair
 
     public override string ToString()
     {
-        return string.Format($"{x}, {e1}, {er}", x, e1, er);
+        return string.Format($"{x}, {e1}, {er}");
     }
 }

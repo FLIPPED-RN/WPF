@@ -5,12 +5,14 @@ public class Fraction : Pair
     private int numerator;
     private int denominator;
     
+    //числитель
     public int Numerator
     {
         get { return numerator; }
         set { numerator = value; }
     }
     
+    //знаменатель
     public int Denominator
     {
         get { return denominator; }
@@ -23,6 +25,7 @@ public class Fraction : Pair
         this.denominator = denominator;
     }
 
+    //приведение к общему знаменателю
     public static int NOZ(int del0, int del1)
     {
         if (del1 % del0 == 0)
@@ -40,6 +43,7 @@ public class Fraction : Pair
         return temp;
     }
 
+    //сложение 
     public static Fraction operator +(Fraction A, Fraction B)
     {
         Fraction fraction = new Fraction(0, NOZ(A.Denominator, B.Denominator));
@@ -48,6 +52,7 @@ public class Fraction : Pair
         return fraction;
     }
     
+    //вычитание
     public static Fraction operator -(Fraction A, Fraction B)
     {
         Fraction fraction = new Fraction(0, NOZ(A.Denominator, B.Denominator));
@@ -55,6 +60,8 @@ public class Fraction : Pair
         fraction.numerator -= fraction.denominator / B.Denominator * B.Numerator;
         return fraction;
     }
+    
+    //умножение
     public static Fraction operator *(Fraction A, Fraction B)
     {
         Fraction fraction = new Fraction(A.numerator * B.numerator, A.denominator * B.denominator);
@@ -67,6 +74,7 @@ public class Fraction : Pair
         return fraction;
     }
     
+    //деление
     public static Fraction operator /(Fraction A, Fraction B)
     {
         Fraction fraction = new Fraction(A.numerator * B.denominator, A.denominator * B.numerator);
@@ -79,6 +87,8 @@ public class Fraction : Pair
         return fraction;
     }
 
+    
+    //сокращение дроби
     public void Reduce()
     {
         this.Numerator = this.Numerator > 0 ? this.Numerator : -this.Numerator;
@@ -96,6 +106,7 @@ public class Fraction : Pair
         }
     }
 
+    //перевод в десятичную дробь
     public double ToDouble()
     {
         if (denominator != 0)
@@ -106,5 +117,10 @@ public class Fraction : Pair
         {
             throw new InvalidOperationException("Знаменатель не должен быть равен нулю!");
         }
+    }
+    
+    public override string ToString()
+    {
+        return $"{numerator}, {denominator}";
     }
 }

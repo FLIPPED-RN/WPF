@@ -2,5 +2,5 @@
 
 public abstract class Pair
 {
-    
+    public abstract string ToString();
 }
