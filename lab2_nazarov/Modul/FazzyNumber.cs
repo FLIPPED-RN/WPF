@@ -1,4 +1,4 @@
-﻿namespace lab1_nazarov.Modul;
+﻿namespace lab2_nazarov.Modul;
 
 public class FazzyNumber : IPair
 {
