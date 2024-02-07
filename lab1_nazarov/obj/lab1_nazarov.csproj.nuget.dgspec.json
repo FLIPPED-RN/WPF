@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rnaza\\wpf\\lab1_nazarov\\lab1_nazarov.csproj": {}
+    "D:\\wpf-proj\\lab1_nazarov\\lab1_nazarov.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rnaza\\wpf\\lab1_nazarov\\lab1_nazarov.csproj": {
+    "D:\\wpf-proj\\lab1_nazarov\\lab1_nazarov.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rnaza\\wpf\\lab1_nazarov\\lab1_nazarov.csproj",
+        "projectUniqueName": "D:\\wpf-proj\\lab1_nazarov\\lab1_nazarov.csproj",
         "projectName": "lab1_nazarov",
-        "projectPath": "C:\\Users\\rnaza\\wpf\\lab1_nazarov\\lab1_nazarov.csproj",
+        "projectPath": "D:\\wpf-proj\\lab1_nazarov\\lab1_nazarov.csproj",
         "packagesPath": "C:\\Users\\rnaza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rnaza\\wpf\\lab1_nazarov\\obj\\",
+        "outputPath": "D:\\wpf-proj\\lab1_nazarov\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rnaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\rnaza\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
